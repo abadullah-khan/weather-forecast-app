@@ -1,0 +1,7 @@
+.header {
+  /* background-color: blueviolet; */
+}
+.header input {
+  color: var(--primary-font-color);
+  font-size: 1.5rem;
+}
