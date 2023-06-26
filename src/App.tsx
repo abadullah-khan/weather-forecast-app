@@ -57,7 +57,9 @@ function App() {
       <div className={style.headerContainer}>
         <Header handleFetchData={handleFetchData} />
       </div>
-      <div>{weatherData && <Weather {...weatherData} />}</div>
+      <div className={style.weatherContainer}>
+        {weatherData && <Weather {...weatherData} />}
+      </div>
       <div>{forecastData && <Forecast {...forecastData} />}</div>
     </div>
   );

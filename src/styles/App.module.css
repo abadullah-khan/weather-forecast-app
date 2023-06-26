@@ -14,3 +14,7 @@
   display: flex;
   justify-content: center;
 }
+.weatherContainer {
+  display: flex;
+  justify-content: center;
+}

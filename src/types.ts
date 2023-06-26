@@ -12,9 +12,11 @@ export interface WeatherDataType {
   clouds: Clouds;
   dt: number;
   sys: Sys;
+  timezone: number;
   id: number;
   name: string;
   cod: number;
+  rain?: Rain | null;
 }
 export interface Coord {
   lon: number;
@@ -32,6 +34,8 @@ export interface Main {
   humidity: number;
   temp_min: number;
   temp_max: number;
+  sea_level: number;
+  grnd_level: number;
 }
 export interface Wind {
   speed: number;
