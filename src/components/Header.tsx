@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import style from "../styles/header.module.css";
-import { HandleFetchData } from "../types";
+import { HandleFetchDataType } from "../types";
 
 type Prop = {
-  handleFetchData: HandleFetchData;
+  handleFetchData: HandleFetchDataType;
 };
 
 const Header = ({ handleFetchData }: Prop) => {
