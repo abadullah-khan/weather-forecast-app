@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./styles/variables.css";
-import style from "./styles/App.module.css";
+import "./App.css";
 
 import Header from "./components/Header";
 
@@ -25,10 +25,10 @@ function App() {
   const handleFetchData: HandleFetchDataType = async (city) => {
     try {
       const getWeather = axios.get(
-        `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${process.env.REACT_APP_OPENWEATHERMAP_API_KEY}`
+        `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${process.env.REACT_APP_OPENWEATHERMAP_API_KEY}&units=metric`
       );
       const getForecast = axios.get(
-        `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${process.env.REACT_APP_OPENWEATHERMAP_API_KEY}`
+        `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${process.env.REACT_APP_OPENWEATHERMAP_API_KEY}&units=metric`
       );
 
       // Fetching data at same time from both APIs.
@@ -53,14 +53,14 @@ function App() {
   console.log(weatherData);
   console.log(forecastData);
   return (
-    <div className={style.App}>
-      <div className={style.headerContainer}>
+    <div className="App">
+      <header>
         <Header handleFetchData={handleFetchData} />
-      </div>
-      <div className={style.weatherContainer}>
+      </header>
+      <main>
         {weatherData && <Weather {...weatherData} />}
-      </div>
-      <div>{forecastData && <Forecast {...forecastData} />}</div>
+        {forecastData && <Forecast {...forecastData} />}
+      </main>
     </div>
   );
 }
