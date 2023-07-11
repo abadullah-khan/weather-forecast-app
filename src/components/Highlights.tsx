@@ -50,62 +50,6 @@ const Highlights = ({
         </div>
         <div className={style.card}>
           <span className={style.iconContainer}>
-            <WiHumidity />
-          </span>
-          <div className={style.detailsContainer}>
-            <p>
-              Humidity :{" "}
-              <span>
-                {humidity}
-                <span>%</span>
-              </span>
-            </p>
-          </div>
-        </div>
-        <div className={style.card}>
-          <span className={style.iconContainer}>
-            <MdOutlineVisibility />
-          </span>
-          <div className={style.detailsContainer}>
-            <p>
-              Visibility :{" "}
-              <span>
-                {visibility / 1000}
-                <span>km</span>
-              </span>
-            </p>
-          </div>
-        </div>
-        <div className={style.card}>
-          <span className={style.iconContainer}>
-            <BiWind />
-          </span>
-          <div className={style.detailsContainer}>
-            <p>
-              Speed :{" "}
-              <span>
-                {speed}
-                <span>m/s</span>
-              </span>
-            </p>
-            <p>
-              Deg :{" "}
-              <span>
-                {deg}
-                &deg;
-              </span>
-            </p>
-            <p>
-              Gust :{" "}
-              <span>
-                {gust}
-                <span>m/s</span>
-              </span>
-            </p>
-          </div>
-        </div>
-        <div className={style.card}>
-          <span className={style.iconContainer}>
             <FiSunrise />
           </span>
           <div className={style.detailsContainer}>
@@ -139,6 +83,65 @@ const Highlights = ({
                   minute: "numeric",
                   second: "numeric",
                 })}{" "}
+              </span>
+            </p>
+          </div>
+        </div>
+        <div className={style.card}>
+          <span className={style.iconContainer}>
+            <BiWind />
+          </span>
+          <div className={style.detailsContainer}>
+            <p>
+              Speed :{" "}
+              <span>
+                {speed}
+                <span>m/s</span>
+              </span>
+            </p>
+            <p>
+              Deg :{" "}
+              <span>
+                {deg}
+                &deg;
+              </span>
+            </p>
+            {/* checking if gust is present */}
+            {gust && (
+              <p>
+                Gust :{" "}
+                <span>
+                  {gust}
+                  <span>m/s</span>
+                </span>
+              </p>
+            )}
+          </div>
+        </div>
+        <div className={style.card}>
+          <span className={style.iconContainer}>
+            <WiHumidity />
+          </span>
+          <div className={style.detailsContainer}>
+            <p>
+              Humidity :{" "}
+              <span>
+                {humidity}
+                <span>%</span>
+              </span>
+            </p>
+          </div>
+        </div>
+        <div className={style.card}>
+          <span className={style.iconContainer}>
+            <MdOutlineVisibility />
+          </span>
+          <div className={style.detailsContainer}>
+            <p>
+              Visibility :{" "}
+              <span>
+                {visibility / 1000}
+                <span>km</span>
               </span>
             </p>
           </div>
