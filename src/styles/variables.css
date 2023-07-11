@@ -1,6 +1,7 @@
 :root {
   --primary-background-color: #0f4b72;
-  --secondary-background-color: blue;
+  --secondary-background-color: dodgerblue;
+  --dark-background-color: rgb(2, 120, 238);
   --secondary-font-color: rgb(186, 189, 187);
   --primary-font-color: rgb(231, 227, 227);
 }

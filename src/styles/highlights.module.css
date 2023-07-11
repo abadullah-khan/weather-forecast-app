@@ -1,0 +1,50 @@
+.highlights {
+  background-color: var(--secondary-background-color);
+  padding: 1rem;
+  color: var(--primary-font-color);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.highlights > div {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.highlights > div > div {
+  background-color: var(--dark-background-color);
+  height: 110px;
+  width: 280px;
+  padding: 1rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.highlights div div > span {
+  font-size: 3.5rem;
+  display: flex;
+  align-items: center;
+}
+.highlights div div div {
+  flex-direction: column;
+  align-items: start;
+  gap: 0;
+}
+.highlights div div div p {
+  font-size: 1rem;
+  color: var(--secondary-font-color);
+}
+.highlights div div div p span {
+  font-size: 1.3rem;
+  color: var(--primary-font-color);
+}
+.highlights div div div p span sup {
+  font-size: 0.8rem;
+}
+.highlights div div div p span span {
+  font-size: 0.8rem;
+}

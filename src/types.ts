@@ -16,7 +16,7 @@ export interface WeatherDataType {
   id: number;
   name: string;
   cod: number;
-  rain?: Rain | null;
+  rain?: Rain;
 }
 export interface Coord {
   lon: number;
@@ -103,7 +103,7 @@ export interface Sys {
   pod: string;
 }
 export interface Rain {
-  h: number;
+  [key: string]: number; // we don't know how many eys will be in there but we know what will be their type.
 }
 export interface City {
   id: number;

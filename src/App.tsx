@@ -12,6 +12,7 @@ import {
 } from "./types";
 import Weather from "./components/Weather";
 import Forecast from "./components/Forecast";
+import Highlights from "./components/Highlights";
 
 function App() {
   //  Initialized the useState variables and specified what type of data it will be having.
@@ -59,6 +60,7 @@ function App() {
       </header>
       <main>
         {weatherData && <Weather {...weatherData} />}
+        {weatherData && <Highlights {...weatherData} />}
         {forecastData && <Forecast {...forecastData} />}
       </main>
     </div>

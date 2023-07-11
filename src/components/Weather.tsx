@@ -9,21 +9,7 @@ import { MdAccessTime } from "react-icons/md";
 //   weatherData: WeatherDataType;
 // };
 
-const Weather = ({
-  coord,
-  timezone,
-  id,
-  name,
-  cod,
-  weather,
-  base,
-  main,
-  visibility,
-  wind,
-  clouds,
-  dt,
-  sys,
-}: WeatherDataType) => {
+const Weather = ({ name, weather, main, clouds, dt, sys }: WeatherDataType) => {
   return (
     <div className={style.weather}>
       Now
