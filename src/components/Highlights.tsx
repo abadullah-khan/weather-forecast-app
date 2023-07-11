@@ -114,11 +114,12 @@ const Highlights = ({
               <span>
                 {/* converting UNIX timestamp  */}
                 {new Date(sunrise * 1000).toLocaleString(undefined, {
+                  hour12: true,
                   hour: "numeric",
                   minute: "numeric",
                   second: "numeric",
                 })}{" "}
-                PM
+                {/* PM */}
               </span>
             </p>
           </div>
@@ -133,11 +134,11 @@ const Highlights = ({
               <span>
                 {/* converting UNIX timestamp  */}
                 {new Date(sunset * 1000).toLocaleString(undefined, {
+                  hour12: true,
                   hour: "numeric",
                   minute: "numeric",
                   second: "numeric",
                 })}{" "}
-                PM
               </span>
             </p>
           </div>
