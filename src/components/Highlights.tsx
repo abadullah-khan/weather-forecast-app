@@ -20,12 +20,12 @@ const Highlights = ({
   return (
     <div className={style.highlights}>
       Today's highlights
-      <div>
-        <div>
-          <span>
+      <div className={style.cardWrapper}>
+        <div className={style.card}>
+          <span className={style.iconContainer}>
             <PiThermometer />
           </span>
-          <div>
+          <div className={style.detailsContainer}>
             <p>
               Feels like :{" "}
               <span>
@@ -48,11 +48,11 @@ const Highlights = ({
             </p>
           </div>
         </div>
-        <div>
-          <span>
+        <div className={style.card}>
+          <span className={style.iconContainer}>
             <WiHumidity />
           </span>
-          <div>
+          <div className={style.detailsContainer}>
             <p>
               Humidity :{" "}
               <span>
@@ -62,11 +62,11 @@ const Highlights = ({
             </p>
           </div>
         </div>
-        <div>
-          <span>
+        <div className={style.card}>
+          <span className={style.iconContainer}>
             <MdOutlineVisibility />
           </span>
-          <div>
+          <div className={style.detailsContainer}>
             <p>
               Visibility :{" "}
               <span>
@@ -76,11 +76,11 @@ const Highlights = ({
             </p>
           </div>
         </div>
-        <div>
-          <span>
+        <div className={style.card}>
+          <span className={style.iconContainer}>
             <BiWind />
           </span>
-          <div>
+          <div className={style.detailsContainer}>
             <p>
               Speed :{" "}
               <span>
@@ -104,11 +104,11 @@ const Highlights = ({
             </p>
           </div>
         </div>
-        <div>
-          <span>
+        <div className={style.card}>
+          <span className={style.iconContainer}>
             <FiSunrise />
           </span>
-          <div>
+          <div className={style.detailsContainer}>
             <p>
               Sunrise :{" "}
               <span>
@@ -123,11 +123,11 @@ const Highlights = ({
             </p>
           </div>
         </div>
-        <div>
-          <span>
+        <div className={style.card}>
+          <span className={style.iconContainer}>
             <FiSunset />
           </span>
-          <div>
+          <div className={style.detailsContainer}>
             <p>
               Sunset :{" "}
               <span>
@@ -142,11 +142,11 @@ const Highlights = ({
             </p>
           </div>
         </div>
-        <div>
-          <span>
+        <div className={style.card}>
+          <span className={style.iconContainer}>
             <GiWindSlap />
           </span>
-          <div>
+          <div className={style.detailsContainer}>
             <p>
               Pressure :{" "}
               <span>
@@ -157,11 +157,11 @@ const Highlights = ({
           </div>
         </div>
         {rain && (
-          <div>
-            <span>
+          <div className={style.card}>
+            <span className={style.iconContainer}>
               <WiRainWind />
             </span>
-            <div>
+            <div className={style.detailsContainer}>
               {/* We're getting all the entries into an array and mapping it  */}
               {Object.entries(rain).map(([key, value]) => (
                 <p key={key}>
