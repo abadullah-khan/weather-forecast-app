@@ -2,6 +2,7 @@ import React from "react";
 import { ForecastDataType } from "../types";
 import style from "../styles/forecast.module.css";
 import { HiOutlinePaperAirplane } from "react-icons/hi";
+import { BiWind } from "react-icons/bi";
 
 const Forecast = ({ list }: ForecastDataType) => {
   console.log(typeof list);
@@ -41,7 +42,7 @@ const Forecast = ({ list }: ForecastDataType) => {
                     src={`https://openweathermap.org/img/wn/${item.weather[0].icon}.png`}
                     alt={item.weather[0].main}
                   />
-                  <span>{item.main.temp}&deg;</span>
+                  <span>{Math.round(item.main.temp)}&deg;c</span>
                 </div>
               )
           )}
@@ -60,9 +61,9 @@ const Forecast = ({ list }: ForecastDataType) => {
                     {new Date(item.dt_txt).getHours() >= 12 ? "pm" : "am"}
                   </span>
                   <div className={style.iconContainer}>
-                    <HiOutlinePaperAirplane />
+                    <BiWind />
                   </div>
-                  <span>{item.main.temp}&deg;</span>
+                  <span>{item.wind.speed} m/s</span>
                 </div>
               )
           )}
