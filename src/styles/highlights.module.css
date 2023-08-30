@@ -4,6 +4,8 @@
   color: var(--primary-font-color);
   font-size: 1rem;
   font-weight: 600;
+  letter-spacing: 1px;
+  word-spacing: 3px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -17,6 +19,7 @@
   flex-wrap: wrap;
 }
 .card {
+  word-spacing: 1px;
   background-color: var(--dark-background-color);
   height: 110px;
   min-width: 280px;
