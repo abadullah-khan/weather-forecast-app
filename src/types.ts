@@ -103,7 +103,7 @@ export interface Sys {
   pod: string;
 }
 export interface Rain {
-  [key: string]: number; // we don't know how many eys will be in there but we know what will be their type.
+  [key: string]: number; // we don't know how many keys will be in there but we know what will be their type.
 }
 export interface City {
   id: number;

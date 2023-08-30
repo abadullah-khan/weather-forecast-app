@@ -58,10 +58,18 @@ function App() {
       <header>
         <Header handleFetchData={handleFetchData} />
       </header>
-      <main>
+      <main style={{ padding: "1rem" }}>
         {weatherData && <Weather {...weatherData} />}
-        {weatherData && <Highlights {...weatherData} />}
-        {forecastData && <Forecast {...forecastData} />}
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            gap: "1rem",
+          }}
+        >
+          {weatherData && <Highlights {...weatherData} />}
+          {forecastData && <Forecast {...forecastData} />}
+        </div>
       </main>
     </div>
   );
