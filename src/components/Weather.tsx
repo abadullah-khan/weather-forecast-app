@@ -5,11 +5,8 @@ import style from "../styles/weather.module.css";
 import { ImLocation } from "react-icons/im";
 import { BsCalendarWeek } from "react-icons/bs";
 import { MdAccessTime } from "react-icons/md";
-// type Prop = {
-//   weatherData: WeatherDataType;
-// };
 
-const Weather = ({ name, weather, main, clouds, dt, sys }: WeatherDataType) => {
+const Weather = ({ name, weather, main, dt, sys }: WeatherDataType) => {
   return (
     <div className={style.weather}>
       Now
@@ -32,15 +29,13 @@ const Weather = ({ name, weather, main, clouds, dt, sys }: WeatherDataType) => {
       <div>
         {/* Mapping the weather icons and descriptions */}
         {weather.map((e) => (
-          <>
-            <div className={style.imageContainer} key={e.id}>
-              <img
-                src={`https://openweathermap.org/img/wn/${e.icon}.png`}
-                alt={e.main}
-              />
-              {e.description}
-            </div>
-          </>
+          <div className={style.imageContainer} key={e.id}>
+            <img
+              src={`https://openweathermap.org/img/wn/${e.icon}.png`}
+              alt={e.main}
+            />
+            {e.description}
+          </div>
         ))}
       </div>
       <hr />

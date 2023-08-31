@@ -9,7 +9,7 @@ const WeekDaysForecast = ({ list }: ForecastDataType) => {
       {list.map(
         (item) =>
           item.dt_txt.includes("12:00:00") && (
-            <div className={style.card}>
+            <div className={style.card} key={item.dt}>
               <span>
                 <img
                   src={`https://openweathermap.org/img/wn/${item.weather[0].icon}.png`}
