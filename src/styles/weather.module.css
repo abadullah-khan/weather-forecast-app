@@ -7,13 +7,22 @@
 .weather {
   background-color: dodgerblue;
   padding: 1rem;
-  color: var(--secondary-font-color);
+  font-weight: 600;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  color: var(--primary-font-color);
   border-radius: 10px;
 }
+
 .weather div {
+  font-weight: normal;
+  color: var(--primary-font-color);
   display: flex;
   gap: 1rem;
   padding: 0.5rem;
+}
+.weather div > span {
+  color: var(--secondary-font-color);
 }
 .weather div h1 {
   font-size: 12rem;
@@ -21,6 +30,7 @@
   color: var(--primary-font-color);
 }
 .weather div h1 > sup {
+  font-weight: normal;
   font-size: 7.5rem;
 }
 .weather div .imageContainer {
@@ -29,6 +39,6 @@
   align-items: center;
 }
 .weather div .imageContainer img {
-  border: 1px solid violet;
+  border: 1px solid var(--primary-font-color);
   height: 100px;
 }
