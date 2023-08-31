@@ -13,6 +13,7 @@ import {
 import Weather from "./components/Weather";
 import Forecast from "./components/Forecast";
 import Highlights from "./components/Highlights";
+import WeekDaysForecast from "./components/WeekDaysForecast";
 
 function App() {
   //  Initialized the useState variables and specified what type of data it will be having.
@@ -59,7 +60,10 @@ function App() {
         <Header handleFetchData={handleFetchData} />
       </header>
       <main style={{ padding: "1rem" }}>
-        {weatherData && <Weather {...weatherData} />}
+        <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
+          {weatherData && <Weather {...weatherData} />}
+          {forecastData && <WeekDaysForecast {...forecastData} />}
+        </div>
         <div
           style={{
             display: "flex",

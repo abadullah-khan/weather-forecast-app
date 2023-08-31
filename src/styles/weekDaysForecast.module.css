@@ -1,0 +1,27 @@
+.weekDaysForecast {
+  background-color: var(--secondary-background-color);
+  color: var(--primary-font-color);
+  font-weight: 600;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  padding: 1rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.card {
+  background-color: var(--dark-background-color);
+  padding: 0.25rem;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  font-weight: normal;
+  word-spacing: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card > span {
+  display: flex;
+  align-items: center;
+}
