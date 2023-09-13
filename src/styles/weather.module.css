@@ -1,6 +1,7 @@
 .weather {
   background-color: dodgerblue;
   padding: 1rem;
+  font-size: 1rem;
   font-weight: 600;
   letter-spacing: 1px;
   word-spacing: 3px;
@@ -35,4 +36,332 @@
 .weather div .imageContainer img {
   border: 1px solid var(--primary-font-color);
   height: 100px;
+}
+
+/* Media Queries */
+
+@media (max-width: 725px) {
+  .weather div > h1 {
+    width: 100%;
+    text-align: center;
+  }
+  .weather {
+    padding: calc(1rem * 1.5);
+    letter-spacing: calc(1px * 1.5);
+    word-spacing: calc(3px * 1.5);
+    border-radius: calc(10px * 1.5);
+    font-size: calc(1rem * 1.5);
+  }
+  .weather div {
+    gap: calc(1rem * 1.5);
+    padding: calc(0.5rem * 1.5);
+  }
+  .weather div h1 {
+    font-size: calc(12rem * 1.25);
+  }
+  .weather div h1 > sup {
+    font-size: calc(7.5rem * 1.5);
+  }
+  .weather div .imageContainer img {
+    height: calc(100px * 1.5);
+  }
+}
+
+@media (max-width: 580px) {
+  .weather {
+    padding: calc(1rem * 1.15);
+    letter-spacing: calc(1px * 1.15);
+    word-spacing: calc(3px * 1.15);
+    border-radius: calc(10px * 1.15);
+    font-size: calc(1rem * 1.15);
+  }
+  .weather div {
+    gap: calc(1rem * 1.15);
+    padding: calc(0.5rem * 1.15);
+  }
+  .weather div h1 {
+    font-size: calc(12rem * 1.15);
+  }
+  .weather div h1 > sup {
+    font-size: calc(7.5rem * 1.15);
+  }
+  .weather div .imageContainer img {
+    height: calc(100px * 1.15);
+  }
+}
+
+@media (max-width: 485px) {
+  .weather {
+    padding: calc(1rem);
+    letter-spacing: calc(1px);
+    word-spacing: calc(3px);
+    border-radius: calc(10px);
+    font-size: calc(1rem);
+  }
+  .weather div {
+    gap: calc(1rem);
+    padding: calc(0.5rem);
+  }
+  .weather div h1 {
+    font-size: calc(12rem);
+  }
+  .weather div h1 > sup {
+    font-size: calc(7.5rem);
+  }
+  .weather div .imageContainer img {
+    height: calc(100px);
+  }
+}
+
+@media (max-width: 420px) {
+  .weather {
+    padding: calc(1rem * 0.85);
+    letter-spacing: calc(1px * 0.85);
+    word-spacing: calc(3px * 0.85);
+    border-radius: calc(10px * 0.85);
+    font-size: calc(1rem * 0.85);
+  }
+  .weather div {
+    gap: calc(1rem * 0.85);
+    padding: calc(0.5rem * 0.85);
+  }
+  .weather div h1 {
+    font-size: calc(12rem * 0.85);
+  }
+  .weather div h1 > sup {
+    font-size: calc(7.5rem * 0.85);
+  }
+  .weather div .imageContainer img {
+    height: calc(100px * 0.85);
+  }
+}
+
+@media (max-width: 365px) {
+  .weather {
+    padding: calc(1rem * 0.65);
+    letter-spacing: calc(1px * 0.65);
+    word-spacing: calc(3px * 0.65);
+    border-radius: calc(10px * 0.65);
+    font-size: calc(1rem * 0.65);
+  }
+  .weather div {
+    gap: calc(1rem * 0.65);
+    padding: calc(0.5rem * 0.65);
+  }
+  .weather div h1 {
+    font-size: calc(12rem * 0.65);
+  }
+  .weather div h1 > sup {
+    font-size: calc(7.5rem * 0.65);
+  }
+  .weather div .imageContainer img {
+    height: calc(100px * 0.65);
+  }
+}
+
+@media (min-width: 725px) {
+  .weather {
+    padding: calc(1rem * 65 / 100);
+    letter-spacing: calc(1px * 65 / 100);
+    word-spacing: calc(3px * 65 / 100);
+    border-radius: calc(10px * 65 / 100);
+    font-size: calc(1rem * 65 / 100);
+  }
+  .weather div {
+    gap: calc(1rem * 65 / 100);
+    padding: calc(0.5rem * 65 / 100);
+  }
+  .weather div h1 {
+    font-size: calc(12rem * 65 / 100);
+  }
+  .weather div h1 > sup {
+    font-size: calc(7.5rem * 65 / 100);
+  }
+  .weather div .imageContainer img {
+    height: calc(100px * 65 / 100);
+  }
+}
+
+@media (min-width: 950px) {
+  .weather {
+    padding: calc(1rem * 85 / 100);
+    letter-spacing: calc(1px * 85 / 100);
+    word-spacing: calc(3px * 85 / 100);
+    border-radius: calc(10px * 85 / 100);
+    font-size: calc(1rem * 85 / 100);
+  }
+  .weather div {
+    gap: calc(1rem * 85 / 100);
+    padding: calc(0.5rem * 85 / 100);
+  }
+  .weather div h1 {
+    font-size: calc(12rem * 85 / 100);
+  }
+  .weather div h1 > sup {
+    font-size: calc(7.5rem * 85 / 100);
+  }
+  .weather div .imageContainer img {
+    height: calc(100px * 85 / 100);
+  }
+}
+
+@media (min-width: 1120px) {
+  .weather {
+    padding: calc(1rem * 1);
+    letter-spacing: calc(1px * 1);
+    word-spacing: calc(3px * 1);
+    border-radius: calc(10px * 1);
+    font-size: calc(1rem * 1);
+  }
+  .weather div {
+    gap: calc(1rem * 1);
+    padding: calc(0.5rem * 1);
+  }
+  .weather div h1 {
+    font-size: calc(12rem * 1);
+  }
+  .weather div h1 > sup {
+    font-size: calc(7.5rem * 1);
+  }
+  .weather div .imageContainer img {
+    height: calc(100px * 1);
+  }
+}
+
+@media (min-width: 1400px) {
+  .weather {
+    padding: calc(1rem * 1.25);
+    letter-spacing: calc(1px * 1.25);
+    word-spacing: calc(3px * 1.25);
+    border-radius: calc(10px * 1.25);
+    font-size: calc(1rem * 1.25);
+  }
+  .weather div {
+    gap: calc(1rem * 1.25);
+    padding: calc(0.5rem * 1.25);
+  }
+  .weather div h1 {
+    font-size: calc(12rem * 1.25);
+  }
+  .weather div h1 > sup {
+    font-size: calc(7.5rem * 1.25);
+  }
+  .weather div .imageContainer img {
+    height: calc(100px * 1.25);
+  }
+}
+
+@media (min-width: 1660px) {
+  .weather {
+    padding: calc(1rem * 1.5);
+    letter-spacing: calc(1px * 1.5);
+    word-spacing: calc(3px * 1.5);
+    border-radius: calc(10px * 1.5);
+    font-size: calc(1rem * 1.5);
+  }
+  .weather div {
+    gap: calc(1rem * 1.5);
+    padding: calc(0.5rem * 1.5);
+  }
+  .weather div h1 {
+    font-size: calc(12rem * 1.5);
+  }
+  .weather div h1 > sup {
+    font-size: calc(7.5rem * 1.5);
+  }
+  .weather div .imageContainer img {
+    height: calc(100px * 1.5);
+  }
+}
+
+@media (min-width: 1950px) {
+  .weather {
+    padding: calc(1rem * 1.75);
+    letter-spacing: calc(1px * 1.75);
+    word-spacing: calc(3px * 1.75);
+    border-radius: calc(10px * 1.75);
+    font-size: calc(1rem * 1.75);
+  }
+  .weather div {
+    gap: calc(1rem * 1.75);
+    padding: calc(0.5rem * 1.75);
+  }
+  .weather div h1 {
+    font-size: calc(12rem * 1.75);
+  }
+  .weather div h1 > sup {
+    font-size: calc(7.5rem * 1.75);
+  }
+  .weather div .imageContainer img {
+    height: calc(100px * 1.75);
+  }
+}
+
+@media (min-width: 2250px) {
+  .weather {
+    padding: calc(1rem * 2);
+    letter-spacing: calc(1px * 2);
+    word-spacing: calc(3px * 2);
+    border-radius: calc(10px * 2);
+    font-size: calc(1rem * 2);
+  }
+  .weather div {
+    gap: calc(1rem * 2);
+    padding: calc(0.5rem * 2);
+  }
+  .weather div h1 {
+    font-size: calc(12rem * 2);
+  }
+  .weather div h1 > sup {
+    font-size: calc(7.5rem * 2);
+  }
+  .weather div .imageContainer img {
+    height: calc(100px * 2);
+  }
+}
+
+@media (min-width: 2500px) {
+  .weather {
+    padding: calc(1rem * 2.25);
+    letter-spacing: calc(1px * 2.25);
+    word-spacing: calc(3px * 2.25);
+    border-radius: calc(10px * 2.25);
+    font-size: calc(1rem * 2.25);
+  }
+  .weather div {
+    gap: calc(1rem * 2.25);
+    padding: calc(0.5rem * 2.25);
+  }
+  .weather div h1 {
+    font-size: calc(12rem * 2.25);
+  }
+  .weather div h1 > sup {
+    font-size: calc(7.5rem * 2.25);
+  }
+  .weather div .imageContainer img {
+    height: calc(100px * 2.25);
+  }
+}
+
+@media (min-width: 2750px) {
+  .weather {
+    padding: calc(1rem * 2.5);
+    letter-spacing: calc(1px * 2.5);
+    word-spacing: calc(3px * 2.5);
+    border-radius: calc(10px * 2.5);
+    font-size: calc(1rem * 2.5);
+  }
+  .weather div {
+    gap: calc(1rem * 2.5);
+    padding: calc(0.5rem * 2.5);
+  }
+  .weather div h1 {
+    font-size: calc(12rem * 2.5);
+  }
+  .weather div h1 > sup {
+    font-size: calc(7.5rem * 2.5);
+  }
+  .weather div .imageContainer img {
+    height: calc(100px * 2.5);
+  }
 }

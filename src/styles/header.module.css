@@ -5,3 +5,9 @@
   color: var(--primary-font-color);
   font-size: 1.5rem;
 }
+@media (max-width: 340px) {
+  .header input {
+    width: 100px;
+    font-size: 1rem;
+  }
+}

@@ -16,7 +16,6 @@
   border-radius: 10px;
   font-size: 1.3rem;
   font-weight: normal;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -24,4 +23,274 @@
 .card > span {
   display: flex;
   align-items: center;
+}
+.card img {
+  height: 50px;
+}
+
+/* Media Queries */
+
+@media (max-width: 725px) {
+  .weekDaysForecast {
+    font-size: calc(1rem * 1.5);
+    letter-spacing: calc(1px * 1.5);
+    word-spacing: calc(3px * 1.5);
+    padding: calc(1rem * 1.5);
+    border-radius: calc(10px * 1.5);
+    gap: calc(0.5rem * 1.5);
+  }
+  .card {
+    padding: calc(0.25rem * 1.5);
+    border-radius: calc(10px * 1.5);
+    font-size: calc(1.3rem * 1.5);
+  }
+  .card img {
+    height: calc(50px * 1.5);
+  }
+}
+@media (max-width: 580px) {
+  .weekDaysForecast {
+    font-size: calc(1rem * 1.15);
+    letter-spacing: calc(1px * 1.35);
+    word-spacing: calc(3px * 1.35);
+    padding: calc(1rem * 1.35);
+    border-radius: calc(10px * 1.35);
+    gap: calc(0.5rem * 1.35);
+  }
+  .card {
+    padding: calc(0.25rem * 1.35);
+    border-radius: calc(10px * 1.35);
+    font-size: calc(1.3rem * 1.35);
+  }
+  .card img {
+    height: calc(50px * 1.35);
+  }
+}
+
+@media (max-width: 485px) {
+  .weekDaysForecast {
+    font-size: calc(1rem);
+    letter-spacing: calc(1px);
+    word-spacing: calc(3px);
+    padding: calc(1rem);
+    border-radius: calc(10px);
+    gap: calc(0.5rem);
+  }
+  .card {
+    padding: calc(0.25rem);
+    border-radius: calc(10px);
+    font-size: calc(1.3rem);
+  }
+  .card img {
+    height: calc(50px);
+  }
+}
+
+@media (max-width: 420px) {
+  .weekDaysForecast {
+    font-size: calc(1rem * 0.85);
+    letter-spacing: calc(1px * 0.85);
+    word-spacing: calc(3px * 0.85);
+    padding: calc(1rem * 0.85);
+    border-radius: calc(10px * 0.85);
+    gap: calc(0.5rem * 0.85);
+  }
+  .card {
+    padding: calc(0.25rem * 0.85);
+    border-radius: calc(10px * 0.85);
+    font-size: calc(1.3rem * 0.85);
+  }
+  .card img {
+    height: calc(50px * 0.85);
+  }
+}
+
+@media (max-width: 365px) {
+  .weekDaysForecast {
+    font-size: calc(1rem * 0.65);
+    letter-spacing: calc(1px * 0.65);
+    word-spacing: calc(3px * 0.65);
+    padding: calc(1rem * 0.65);
+    border-radius: calc(10px * 0.65);
+    gap: calc(0.5rem * 0.65);
+  }
+  .card {
+    padding: calc(0.25rem * 0.65);
+    border-radius: calc(10px * 0.65);
+    font-size: calc(1.3rem * 0.65);
+  }
+  .card img {
+    height: calc(50px * 0.65);
+  }
+}
+
+@media (min-width: 725px) {
+  .weekDaysForecast {
+    font-size: calc(1rem * 65 / 100);
+    letter-spacing: calc(1px * 65 / 100);
+    word-spacing: calc(3px * 65 / 100);
+    padding: calc(1rem * 65 / 100);
+    border-radius: calc(10px * 65 / 100);
+    gap: calc(0.5rem * 65 / 100);
+  }
+  .card {
+    padding: calc(0.25rem * 65 / 100);
+    border-radius: calc(10px * 65 / 100);
+    font-size: calc(1.3rem * 65 / 100);
+  }
+  .card img {
+    height: calc(50px * 65 / 100);
+  }
+}
+
+@media (min-width: 950px) {
+  .weekDaysForecast {
+    font-size: calc(1rem * 85 / 100);
+    letter-spacing: calc(1px * 85 / 100);
+    word-spacing: calc(3px * 85 / 100);
+    padding: calc(1rem * 85 / 100);
+    border-radius: calc(10px * 85 / 100);
+    gap: calc(0.5rem * 85 / 100);
+  }
+  .card {
+    padding: calc(0.25rem * 85 / 100);
+    border-radius: calc(10px * 85 / 100);
+    font-size: calc(1.3rem * 85 / 100);
+  }
+  .card img {
+    height: calc(50px * 85 / 100);
+  }
+}
+
+@media (min-width: 1120px) {
+  .weekDaysForecast {
+    font-size: calc(1rem * 1);
+    letter-spacing: calc(1px * 1);
+    word-spacing: calc(3px * 1);
+    padding: calc(1rem * 1);
+    border-radius: calc(10px * 1);
+    gap: calc(0.5rem * 1);
+  }
+  .card {
+    padding: calc(0.25rem * 1);
+    border-radius: calc(10px * 1);
+    font-size: calc(1.3rem * 1);
+  }
+  .card img {
+    height: calc(50px * 1);
+  }
+}
+
+@media (min-width: 1400px) {
+  .weekDaysForecast {
+    font-size: calc(1rem * 1.25);
+    letter-spacing: calc(1px * 1.25);
+    word-spacing: calc(3px * 1.25);
+    padding: calc(1rem * 1.25);
+    border-radius: calc(10px * 1.25);
+    gap: calc(0.5rem * 1.25);
+  }
+  .card {
+    padding: calc(0.25rem * 1.25);
+    border-radius: calc(10px * 1.25);
+    font-size: calc(1.3rem * 1.25);
+  }
+  .card img {
+    height: calc(50px * 1.25);
+  }
+}
+
+@media (min-width: 1660px) {
+  .weekDaysForecast {
+    font-size: calc(1rem * 1.5);
+    letter-spacing: calc(1px * 1.5);
+    word-spacing: calc(3px * 1.5);
+    padding: calc(1rem * 1.5);
+    border-radius: calc(10px * 1.5);
+    gap: calc(0.5rem * 1.5);
+  }
+  .card {
+    padding: calc(0.25rem * 1.5);
+    border-radius: calc(10px * 1.5);
+    font-size: calc(1.3rem * 1.5);
+  }
+  .card img {
+    height: calc(50px * 1.5);
+  }
+}
+
+@media (min-width: 1950px) {
+  .weekDaysForecast {
+    font-size: calc(1rem * 1.75);
+    letter-spacing: calc(1px * 1.75);
+    word-spacing: calc(3px * 1.75);
+    padding: calc(1rem * 1.75);
+    border-radius: calc(10px * 1.75);
+    gap: calc(0.5rem * 1.75);
+  }
+  .card {
+    padding: calc(0.25rem * 1.75);
+    border-radius: calc(10px * 1.75);
+    font-size: calc(1.3rem * 1.75);
+  }
+  .card img {
+    height: calc(50px * 1.75);
+  }
+}
+
+@media (min-width: 2250px) {
+  .weekDaysForecast {
+    font-size: calc(1rem * 2);
+    letter-spacing: calc(1px * 2);
+    word-spacing: calc(3px * 2);
+    padding: calc(1rem * 2);
+    border-radius: calc(10px * 2);
+    gap: calc(0.5rem * 2);
+  }
+  .card {
+    padding: calc(0.25rem * 2);
+    border-radius: calc(10px * 2);
+    font-size: calc(1.3rem * 2);
+  }
+  .card img {
+    height: calc(50px * 2);
+  }
+}
+
+@media (min-width: 2500px) {
+  .weekDaysForecast {
+    font-size: calc(1rem * 2.25);
+    letter-spacing: calc(1px * 2.25);
+    word-spacing: calc(3px * 2.25);
+    padding: calc(1rem * 2.25);
+    border-radius: calc(10px * 2.25);
+    gap: calc(0.5rem * 2.25);
+  }
+  .card {
+    padding: calc(0.25rem * 2.25);
+    border-radius: calc(10px * 2.25);
+    font-size: calc(1.3rem * 2.25);
+  }
+  .card img {
+    height: calc(50px * 2.25);
+  }
+}
+
+@media (min-width: 2750px) {
+  .weekDaysForecast {
+    font-size: calc(1rem * 2.5);
+    letter-spacing: calc(1px * 2.5);
+    word-spacing: calc(3px * 2.5);
+    padding: calc(1rem * 2.5);
+    border-radius: calc(10px * 2.5);
+    gap: calc(0.5rem * 2.5);
+  }
+  .card {
+    padding: calc(0.25rem * 2.5);
+    border-radius: calc(10px * 2.5);
+    font-size: calc(1.3rem * 2.5);
+  }
+  .card img {
+    height: calc(50px * 2.5);
+  }
 }
