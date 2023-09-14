@@ -51,7 +51,7 @@
 }
 /* Media Queries */
 
-@media (max-width: 350px) {
+@media (max-width: 325px) {
   .logoIcon {
     font-size: calc(1.5rem * 0.35);
   }
@@ -75,7 +75,7 @@
     font-size: calc(1.5rem * 0.35);
   }
 }
-@media (min-width: 350px) {
+@media (min-width: 325px) {
   .logoIcon {
     font-size: calc(1.5rem * 0.4);
   }
@@ -265,29 +265,5 @@
   }
   .searchIcon {
     font-size: calc(1.5rem * 1.5);
-  }
-}
-@media (min-width: 1950px) {
-  .logoIcon {
-    font-size: calc(1.5rem * 1.85);
-  }
-  .logoContainer > span {
-    font-size: calc(1.2rem * 1.85);
-  }
-  .searchContainer {
-    gap: calc(0.75rem * 1.85);
-  }
-  .searchContainer input {
-    padding: calc(0.25rem * 1.85) calc(0.75rem * 1.85);
-    font-size: calc(1.5rem * 1.85);
-    border-radius: calc(10px * 1.85);
-  }
-  .searchContainer button {
-    border-radius: calc(10px * 1.85);
-    padding: calc(0.05rem * 1.85) calc(0.5rem * 1.85);
-    font-size: calc(1.2rem * 1.85);
-  }
-  .searchIcon {
-    font-size: calc(1.5rem * 2.25);
   }
 }
