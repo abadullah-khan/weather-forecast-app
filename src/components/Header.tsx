@@ -2,25 +2,33 @@ import React, { useState } from "react";
 import { HiSearch } from "react-icons/hi";
 import { TiWeatherPartlySunny } from "react-icons/ti";
 import style from "../styles/header.module.css";
-import { HandleFetchDataType } from "../types";
+import { HandleFetchDataType, WeatherDataType } from "../types";
 
 type Prop = {
   handleFetchData: HandleFetchDataType;
+  weatherData: WeatherDataType | null;
 };
 
-const Header = ({ handleFetchData }: Prop) => {
+const Header = ({ handleFetchData, weatherData }: Prop) => {
   const [city, setCity] = useState("");
+  const handleKeyUp = (event: React.KeyboardEvent<HTMLInputElement>) => {
+    event.preventDefault();
+    if (event.key === "Enter") {
+      handleFetchData(city);
+    }
+  };
   return (
-    <div className={style.header}>
+    <div className={weatherData ? style.header : style.onlyHeader}>
       <div className={style.logoContainer}>
         <TiWeatherPartlySunny className={style.logoIcon} />
         <span>WeatherForecast</span>
       </div>
       <div className={style.searchContainer}>
         <input
-          type="text"
+          type="search"
           value={city}
           onChange={(e) => setCity(e.target.value)}
+          onKeyUp={(e) => handleKeyUp(e)}
           placeholder="Enter city name"
           style={{
             border: ` 2px solid ${

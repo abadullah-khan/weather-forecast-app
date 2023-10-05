@@ -42,33 +42,39 @@ function App() {
       // Storing the weather data in the useState variable.
       setWeatherData(responseWeather.data);
       setForecastData(responseForecast.data);
-
       setError(null); // Clear any previous error.
-    } catch (error) {
-      // Storing the error message in the useState variable.
 
-      /* Typescript is unable to infer the type of error object within the catch block and typescript doesn't allow explicitly typed catch clause variables in this manner so, we type assertion to cast the error object to the error type. */
-      console.log((error as Error).message);
-      setError((error as Error).message);
+      /* Typescript is unable to infer the type of error object within the catch block and typescript doesn't allow explicitly typed catch clause variables in this manner so I used any type. */
+    } catch (error: any) {
+      setWeatherData(null);
+      setForecastData(null);
+      if (error.response) {
+        setError(error.response.data.message);
+      } else {
+        setError(error.message);
+      }
     }
   };
-  console.log(weatherData);
-  console.log(forecastData);
+
   return (
     <div className="App">
       <header>
-        <Header handleFetchData={handleFetchData} />
+        <Header handleFetchData={handleFetchData} weatherData={weatherData} />
       </header>
-      <main>
-        <aside>
-          {weatherData && <Weather {...weatherData} />}
-          {forecastData && <WeekDaysForecast {...forecastData} />}
-        </aside>
-        <div>
-          {weatherData && <Highlights {...weatherData} />}
-          {forecastData && <Forecast {...forecastData} />}
-        </div>
-      </main>
+      {error ? (
+        <div className="errorMessage">{error}</div>
+      ) : (
+        <main>
+          <aside>
+            {weatherData && <Weather {...weatherData} />}
+            {forecastData && <WeekDaysForecast {...forecastData} />}
+          </aside>
+          <div>
+            {weatherData && <Highlights {...weatherData} />}
+            {forecastData && <Forecast {...forecastData} />}
+          </div>
+        </main>
+      )}
     </div>
   );
 }
