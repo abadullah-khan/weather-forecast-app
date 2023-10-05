@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/abadullah-khan/weather-forecast-app/static/css/main.8c2b2339.css",
+    "main.js": "/abadullah-khan/weather-forecast-app/static/js/main.441b6f86.js",
+    "index.html": "/abadullah-khan/weather-forecast-app/index.html",
+    "main.8c2b2339.css.map": "/abadullah-khan/weather-forecast-app/static/css/main.8c2b2339.css.map",
+    "main.441b6f86.js.map": "/abadullah-khan/weather-forecast-app/static/js/main.441b6f86.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8c2b2339.css",
+    "static/js/main.441b6f86.js"
+  ]
+}
