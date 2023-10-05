@@ -32,6 +32,7 @@
   flex-direction: column;
   align-items: center;
   animation: fade-in 1s ease-in-out;
+  transition: transform 0.2s ease-in-out;
 }
 .card > img {
   height: 5.5rem;
@@ -55,6 +56,11 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+.card:hover,
+.card:focus {
+  z-index: 2;
+  transform: scale(1.075);
 }
 
 /* Media Queries */
