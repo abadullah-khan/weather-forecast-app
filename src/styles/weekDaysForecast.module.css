@@ -19,6 +19,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  animation: fade-in 1s ease-in-out;
 }
 .card > span {
   display: flex;
@@ -26,6 +27,19 @@
 }
 .card img {
   height: 50px;
+}
+
+/* Animations */
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Media Queries */

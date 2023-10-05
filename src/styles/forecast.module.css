@@ -31,6 +31,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  animation: fade-in 1s ease-in-out;
 }
 .card > img {
   height: 5.5rem;
@@ -41,6 +42,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Animations */
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Media Queries */
