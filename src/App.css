@@ -15,6 +15,7 @@ header {
   width: 100%;
   padding: 1rem;
 }
+.loading,
 .errorMessage {
   font-size: 1.5rem;
   font-weight: 500;
@@ -56,6 +57,7 @@ main > div {
 }
 
 @media (max-width: 580px) {
+  .loading,
   .errorMessage {
     font-size: 1rem;
   }
@@ -171,6 +173,7 @@ main > div {
 }
 
 @media (min-width: 1400px) {
+  .loading,
   .errorMessage {
     font-size: 2.5rem;
   }

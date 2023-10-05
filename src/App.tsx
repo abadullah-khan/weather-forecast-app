@@ -22,9 +22,11 @@ function App() {
     null
   );
   const [error, setError] = useState<string | null>(null);
+  const [isLoading, setIsLoading] = useState(false);
 
   // Function to fetch the data.
   const handleFetchData: HandleFetchDataType = async (city) => {
+    setIsLoading(true);
     try {
       const getWeather = axios.get(
         `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${process.env.REACT_APP_OPENWEATHERMAP_API_KEY}&units=metric`
@@ -54,6 +56,7 @@ function App() {
         setError(error.message);
       }
     }
+    setIsLoading(false);
   };
 
   return (
@@ -61,7 +64,9 @@ function App() {
       <header>
         <Header handleFetchData={handleFetchData} weatherData={weatherData} />
       </header>
-      {error ? (
+      {isLoading ? (
+        <div className="loading">Loading...</div>
+      ) : error ? (
         <div className="errorMessage">{error}</div>
       ) : (
         <main>
